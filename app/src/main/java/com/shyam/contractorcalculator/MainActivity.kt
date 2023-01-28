@@ -38,8 +38,10 @@ class MainActivity : AppCompatActivity() {
         var matamt = if(materialamt!!.text.isNotEmpty()){materialamt!!.text.toString()}else{""}
         var matcostamt : Double = if(matamt.isNotEmpty()){matamt.toDouble()}else{0.00}
 
+
+
         var subtotal = lbrcostamt+matcostamt
-        var tax = (lbrcostamt+matcostamt)*0.5
+        var tax = (lbrcostamt+matcostamt)* taxpercent
         var total = subtotal+tax
 
 
@@ -50,5 +52,9 @@ class MainActivity : AppCompatActivity() {
         subtotalamt!!.text = moneyformat.format(subtotal).toString()
         taxamt!!.text = moneyformat.format(tax).toString()
         totalamt!!.text = moneyformat.format(total).toString()
+    }
+
+    companion object {
+        const val taxpercent: Double = 0.05
     }
 }

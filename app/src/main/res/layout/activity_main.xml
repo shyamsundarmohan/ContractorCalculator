@@ -1,143 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Space
-        android:id="@+id/spacer1"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp" />
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
 
 
-    <EditText
-        android:id="@+id/editTextLabor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.776"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spacer1" />
+    <TableRow android:padding="10dp">
 
-    <TextView
-        android:id="@+id/textViewlabor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/labor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextLabor"
+        <TextView
+            android:id="@+id/textViewlabor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/labor"
+            android:textAlignment="textEnd" />
+        <EditText
+            android:id="@+id/editTextLabor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+          />
 
-        app:layout_constraintHorizontal_bias="0.62"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spacer1" />
+    </TableRow>
+    <TableRow android:padding="5dp">
+        <TextView
+            android:id="@+id/textViewmaterials"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/materials"
+            android:textAlignment="textEnd" />
 
-    <TextView
-        android:id="@+id/textViewmaterials"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/materials"
-        app:layout_constraintEnd_toStartOf="@+id/editTextMaterials"
-        app:layout_constraintHorizontal_bias="0.62"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewlabor" />
+        <EditText
+            android:id="@+id/editTextMaterials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+/>
 
-    <EditText
-        android:id="@+id/editTextMaterials"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="44dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextLabor" />
+    </TableRow>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextMaterials" />
+    <TableRow android:padding="5dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="" />
 
-    <TextView
-        android:id="@+id/textViewSubTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/subtotal"
-        app:layout_constraintEnd_toStartOf="@+id/textViewSubTotalVal"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button" />
+    </TableRow>
 
-    <TextView
-        android:id="@+id/textViewSubTotalVal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="vasdadgsadfgsdfg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewSubTotal"
-        app:layout_constraintTop_toBottomOf="@id/button" />
+    <TableRow  android:padding="5dp">
 
-    <TextView
-        android:id="@+id/textViewTax"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/textViewSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
 
-        android:layout_marginTop="4dp"
-        android:text="@string/tax"
-        app:layout_constraintEnd_toStartOf="@+id/textViewSubTotalVal"
+            android:text="@string/subtotal"
+            android:textAlignment="textEnd" />
 
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewSubTotal" />
-
-    <TextView
-        android:id="@+id/textViewTaxVal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="vasdadgsadfgsdfg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewTax"
-        app:layout_constraintTop_toBottomOf="@id/textViewSubTotalVal" />
-
-    <TextView
-        android:id="@+id/textViewTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/total"
-        app:layout_constraintEnd_toStartOf="@+id/textViewTotalVal"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewTax" />
-
-    <TextView
-        android:id="@+id/textViewTotalVal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="vasdadgsadfgsdfg"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewTotal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textViewTotal"
-        app:layout_constraintTop_toTopOf="@+id/textViewTotal" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textViewSubTotalVal" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textViewSubTotalVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+             />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </TableRow>
+
+    <TableRow  android:padding="5dp">
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/textViewTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="@string/tax"
+         />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textViewTaxVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+
+
+
+    </TableRow>
+
+    <TableRow  android:padding="5dp">
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="@string/total"
+           />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textViewTotalVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+
+    </TableRow>
+</TableLayout>
+
+
