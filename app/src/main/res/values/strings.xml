@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">ContractorCalculator</string>
 
-        <string name="labor">Labor:</string>
+        <string name="labor">    Labor:</string>
         <string name="materials">Materials:</string>
         <string name="calculate">Calculate</string>
         <string name="subtotal">SubTotal:</string>
-    <string name="tax">Tax:</string>
-    <string name="total">Total:</string>
+    <string name="tax">     Tax:</string>
+    <string name="total">   Total:</string>
 
 
 
