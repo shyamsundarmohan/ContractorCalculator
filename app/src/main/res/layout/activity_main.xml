@@ -5,10 +5,7 @@
     android:layout_marginTop="10dp"
     android:paddingLeft="5dp"
     android:paddingRight="5dp">
-
-
     <TableRow android:padding="10dp">
-
         <TextView
             android:id="@+id/textViewlabor"
             android:layout_width="wrap_content"
@@ -22,31 +19,25 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="numberDecimal"
-          />
-
+            android:inputType="numberDecimal" />
     </TableRow>
     <TableRow android:padding="5dp">
         <TextView
             android:id="@+id/textViewmaterials"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/materials"
             android:textAlignment="textEnd" />
-
         <EditText
             android:id="@+id/editTextMaterials"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="numberDecimal"
-/>
-
+            android:inputType="numberDecimal" />
     </TableRow>
-
-    <TableRow android:padding="5dp" >
+    <TableRow android:padding="5dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,74 +53,51 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="" />
-
     </TableRow>
-
-    <TableRow  android:padding="5dp">
-
+    <TableRow android:padding="5dp">
         <TextView
             android:id="@+id/textViewSubTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-
             android:text="@string/subtotal"
             android:textAlignment="textEnd" />
-
         <TextView
-            android:layout_weight="1"
             android:id="@+id/textViewSubTotalVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-             />
-
-
-
+            android:layout_weight="1"
+            android:text="" />
     </TableRow>
-
-    <TableRow  android:padding="5dp">
+    <TableRow android:padding="5dp">
         <TextView
-            android:layout_weight="3"
             android:id="@+id/textViewTax"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="textEnd"
+            android:layout_weight="3"
             android:text="@string/tax"
-         />
-
+            android:textAlignment="textEnd" />
         <TextView
-            android:layout_weight="1"
             android:id="@+id/textViewTaxVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            />
-
-
-
-
+            android:layout_weight="1"
+            android:text="" />
     </TableRow>
-
-    <TableRow  android:padding="5dp">
+    <TableRow android:padding="5dp">
         <TextView
-            android:layout_weight="3"
             android:id="@+id/textViewTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="textEnd"
+            android:layout_weight="3"
             android:text="@string/total"
-           />
-
+            android:textAlignment="textEnd" />
         <TextView
-            android:layout_weight="1"
             android:id="@+id/textViewTotalVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            />
-
-
+            android:layout_weight="1"
+            android:text="" />
     </TableRow>
 </TableLayout>
 
